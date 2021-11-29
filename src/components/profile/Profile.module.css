@@ -41,7 +41,7 @@ display: flex;
 justify-content:space-around;
 list-style: none;
 padding: 0;
-border-top: 1px solid grey;
+border-top: 1px solid rgba(51, 49, 49, 0.3);
 background-color: #e1bb92;
 }
 .stats li{
@@ -51,7 +51,10 @@ background-color: #e1bb92;
   padding: 10px 0;
   width: 90px;
 }
-
+.stats li:nth-child(2){
+  border-left: 1px solid rgba(51, 49, 49, 0.3);
+  border-right: 1px solid rgba(51, 49, 49, 0.3);
+}
 .statName{
   font-size: 15px;
   color: gray;
