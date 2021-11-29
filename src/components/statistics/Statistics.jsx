@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Item({ id, label, percentage }) {
   return (
-    <li className={styles.item} id={id}>
+    <li className={styles.item} key={id}>
       <span className={styles.label}>{label}</span>
       <span className={styles.percentage}>{percentage}%</span>
     </li>

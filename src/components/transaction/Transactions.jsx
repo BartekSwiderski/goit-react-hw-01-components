@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 
 function Item({ id, type, amount, currency }) {
   return (
-    <tr id={id}>
+    <tr key={id}>
       <td>{type}</td>
       <td>{amount}</td>
       <td>{currency}</td>

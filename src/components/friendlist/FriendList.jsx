@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 function Item({ isOnline, avatar, name, id }) {
   return (
-    <li className={styles.item} id={id}>
+    <li className={styles.item} key={id}>
       {isOnline === true 
       ? (<span className={styles.statusOn}>{isOnline}</span>)
       : (<span className={styles.statusOff}>{isOnline} </span>)
