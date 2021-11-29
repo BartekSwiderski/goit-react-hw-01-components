@@ -1,9 +1,8 @@
 
-import Profile from "./components/profile/Profile";
-import Statistics from "./components/statistics/Statistics";
-import FriendsList from "./components/friendlist/FriendList";
-import Transactions from "./components/transaction/Transactions";
-
+import Profile from "./components/profile/Profile.jsx";
+import Statistics from "./components/statistics/Statistics.jsx";
+import FriendsList from "./components/friendlist/FriendList.jsx";
+import Transactions from "./components/transaction/Transactions.jsx";
 import user from "./components/profile/user.json";
 import statistics from "./components/statistics/data.json";
 import friends from "./components/friendlist/friends.json";
@@ -11,7 +10,7 @@ import transactions from "./components/transaction/transactions.json";
 
 function App() {
   return (
-    <div className="App">
+    <div>
         <Profile
           username={user.username}
           tag={user.tag}
@@ -19,7 +18,7 @@ function App() {
           avatar={user.avatar}
           stats={user.stats}
         />
-        <Statistics title="Upload stats" statistic={statistics} />
+        <Statistics statistic={statistics} />
         <FriendsList friends={friends} />
         <Transactions items={transactions} />
     </div>

@@ -10,10 +10,10 @@ function Item({ id, label, percentage }) {
   );
 }
 
-const Statistics = ({ statistic, title }) => {
+const Statistics = ({ statistic}) => {
   return (
     <section className={styles.statistics}>
-      <h2 className={styles.title}>{title}</h2>
+      <h2 className={styles.title}>Upload stats</h2>
       <ul className={styles.statList}>
         {
           statistic.map(({ id, label, percentage }) => (
@@ -25,7 +25,6 @@ const Statistics = ({ statistic, title }) => {
 };
 
 Statistics.propTypes = {
-  title: PropTypes.string,
   statistics: PropTypes.array,
 };
 
